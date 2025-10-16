@@ -1,0 +1,142 @@
+body{
+    background-color: #EBEBEB;
+    width: 1024px;
+    margin:0 auto;
+    position:relative;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+
+.box{
+    background-color: rosybrown;
+    width:30%;
+    min-height: 200px;
+    margin:17px 0px;
+}
+
+main img{
+    width:100%;
+    height:auto;
+}
+
+main p{
+    text-align: center;
+    line-height: 20px;
+    font-size: 1rem;
+}
+
+main p::first-line{
+    font-weight: 800;
+}
+
+body header{
+    background-color: rgb(60, 60, 60);
+    color:white;
+    width: 100%;
+}
+
+.menu{
+    width:1024px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(60, 60, 60);
+    /* min-height: 90px; */
+    position: fixed;
+}
+
+.logo{
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.menu ul#full-menu-display{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin:10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    border:1px solid white;
+    padding:10px;
+    color:white;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+.menu ul#mob-menu-display{
+    display: block;
+}
+
+#mob-menu-display{
+    display:none;
+}
+
+@media (max-width:768px) {
+    .box{
+        width:40%;
+    }
+
+    .menu ul#full-menu-display{
+        display: none;
+    }
+
+    .mob-wrapper{
+        display: block;
+    }
+
+    .menu ul#mob-menu-display{
+        display: none;
+        /* margin-right: 50px; */
+        position:absolute;
+        margin-left: -50px;
+        /* background-color: rgb(60, 60, 60); */
+    }
+
+    .menu ul#mob-menu-display li{
+        margin: 0px;
+        border: 1px solid white;
+        width: 100px;
+        text-align: center;
+        padding: 10px 5px;
+        background-color: rgb(60, 60, 60);
+    }
+
+    .menu-holder{
+        margin-right: 30px;
+    }
+
+    .menu ul#mob-menu-display li a{
+        padding:10px;
+        border:none;
+    }
+
+    main {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    padding: 130px 0px;
+}
+}
+
+@media (max-width:400px) {
+    .box{
+        width:100%;
+    }
+
+    /* .full-menu-display{
+        display: none;
+    } */
+
+}
